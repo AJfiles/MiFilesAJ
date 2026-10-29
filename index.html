@@ -302,8 +302,15 @@
                 </button>
             </div>
             <a href="https://www.youtube.com/@Oficial-AJ" target="_blank" rel="noopener noreferrer" class="social-btn bg-[#ff0000] hover:bg-[#cc0000] text-white px-6 py-3 rounded-xl shadow-lg flex items-center gap-2 font-semibold transition hover:-translate-y-1 click-sfx"><i class="fab fa-youtube"></i> YouTube</a>
-            <a href="https://discord.com/invite/v6sXsaHhpu" target="_blank" rel="noopener noreferrer" class="social-btn bg-[#5865F2] hover:bg-[#4752c4] text-white px-6 py-3 rounded-xl shadow-lg flex items-center gap-2 font-semibold transition hover:-translate-y-1 click-sfx"><i class="fab fa-discord"></i> Discord</a>
-            <a href="https://chat.whatsapp.com/EqlXLNNY9GNHDvExWnuk2C" target="_blank" rel="noopener noreferrer" class="social-btn bg-[#25D366] hover:bg-[#128C7E] text-white px-6 py-3 rounded-xl shadow-lg flex items-center gap-2 font-semibold transition hover:-translate-y-1 click-sfx">
+            
+            <!-- Botón Discord Modificado (En creación) -->
+            <a href="#" onclick="event.preventDefault(); showToast('Servidor en creación 🚧');" class="social-btn bg-[#5865F2]/40 hover:bg-[#5865F2]/50 text-white/70 px-6 py-3 rounded-xl shadow-lg flex items-center gap-2 font-semibold transition cursor-not-allowed click-sfx border border-[#5865F2]/30">
+                <i class="fab fa-discord"></i> Discord 
+                <span class="ml-1 px-1.5 py-0.5 text-[9px] font-bold bg-white/20 text-white rounded uppercase shadow-md">Pronto</span>
+            </a>
+
+            <!-- Botón WhatsApp Actualizado -->
+            <a href="https://chat.whatsapp.com/H75ScpK4XAR2Z292APS6Pu?s=sh&p=a&iam=2" target="_blank" rel="noopener noreferrer" class="social-btn bg-[#25D366] hover:bg-[#128C7E] text-white px-6 py-3 rounded-xl shadow-lg flex items-center gap-2 font-semibold transition hover:-translate-y-1 click-sfx">
                 <i class="fab fa-whatsapp"></i> WhatsApp 
                 <span class="ml-1 px-1.5 py-0.5 text-[9px] font-bold bg-white text-green-600 rounded animate-pulse uppercase shadow-md">Nuevo</span>
             </a>
@@ -337,10 +344,10 @@
                 <i class="fas fa-star text-yellow-400 mr-2"></i> ÚLTIMAS CARGAS
             </h2>
 
-            <!-- Separador: Juegos Optimizados -->
+            <!-- Separador: Últimas Cargas -->
             <div class="w-full flex items-center gap-4 mb-4 mt-2 opacity-80">
                 <div class="h-px bg-slate-700 flex-1"></div>
-                <span class="text-sm font-gaming font-bold text-slate-400 tracking-wider uppercase">Juegos Optimizados</span>
+                <span class="text-sm font-gaming font-bold text-slate-400 tracking-wider uppercase">Últimas Cargas</span>
                 <div class="h-px bg-slate-700 flex-1"></div>
             </div>
 
@@ -358,7 +365,7 @@
                         <i class="fas fa-gamepad relative z-10"><i class="fab fa-playstation absolute -bottom-2 -right-4 text-xl text-blue-400"></i></i>
                     </div>
                     <h3 class="font-gaming text-lg md:text-xl font-bold text-white mb-1 relative z-10">AJ CONTROL ALL PS4</h3>
-                    <p class="text-[10px] bg-purple-600/30 text-purple-400 border border-purple-500/50 rounded px-1.5 py-0.5 inline-block mb-1 relative z-10 font-bold">VERSIÓN 0.1.21</p>
+                    <p class="text-[10px] bg-purple-600/30 text-purple-400 border border-purple-500/50 rounded px-1.5 py-0.5 inline-block mb-1 relative z-10 font-bold">VERSIÓN 0.1.34 BETA</p>
                     <p class="text-xs text-gray-400 mb-3 line-clamp-2 relative z-10">Toma el control absoluto. Archivo exclusivo para PS4.</p>
                     <button class="w-full bg-purple-600/20 group-hover:bg-purple-600 text-purple-400 group-hover:text-white py-2 rounded-lg text-sm font-bold transition click-sfx relative z-10">Ver Archivo</button>
                 </div>
@@ -448,7 +455,7 @@
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 rounded-lg bg-purple-900/50 flex items-center justify-center text-purple-400 border border-purple-700/50"><i class="fas fa-gamepad"></i></div>
                             <span class="font-semibold text-lg item-title flex items-center flex-wrap gap-2">
-                                AJ CONTROL ALL PS4 0.1.21
+                                AJ CONTROL ALL PS4 (BETA)
                                 <span class="px-2 py-0.5 text-[10px] font-bold text-white bg-red-600 rounded flex items-center gap-1 shadow-[0_0_10px_rgba(220,38,38,0.5)] badge-anim">
                                     NUEVO <i class="fas fa-fire-alt text-yellow-100"></i>
                                 </span>
@@ -458,11 +465,25 @@
                     </button>
                     <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                         <div class="p-5 border-t border-slate-700 bg-slate-900/30 flex flex-col gap-3">
-                            <p class="text-sm text-gray-300 border-l-4 border-purple-500 pl-3 bg-purple-900/20 py-2 rounded-r">
-                                <strong>Nota:</strong> Herramienta exclusiva de control total.
-                            </p>
-                            <!-- Este enlace NO TIENE dl-link, por lo que NO abrirá el modal del acortador -->
-                            <a href="https://ko-fi.com/s/cf12ca00e1" target="_blank" class="link-hover click-sfx"><i class="fas fa-download mr-2 text-cyan-400"></i> Descargar AJ Control (Directo)</a>
+                            <div class="text-sm text-yellow-200 border-l-4 border-yellow-500 pl-3 bg-yellow-900/20 py-2 rounded-r flex items-start gap-2">
+                                <i class="fas fa-exclamation-triangle mt-1"></i>
+                                <p><strong>Nota:</strong> Herramienta exclusiva de control total. Son versiones Beta y pueden contener errores.</p>
+                            </div>
+                            
+                            <!-- Lista de Versiones (Enlaces directos sin acortador) -->
+                            <ul class="space-y-2 mt-2">
+                                <li>
+                                    <a href="https://ko-fi.com/s/ef15c58c33" target="_blank" class="link-hover click-sfx flex items-center gap-2 text-cyan-400">
+                                        <i class="fas fa-download"></i> Descargar Versión 0.1.34 
+                                        <span class="bg-cyan-500 text-black text-[9px] px-1.5 py-0.5 rounded font-bold animate-pulse">NUEVO</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ko-fi.com/s/cf12ca00e1" target="_blank" class="link-hover click-sfx flex items-center gap-2 text-gray-400">
+                                        <i class="fas fa-download"></i> Descargar Versión 0.1.21 (Anterior)
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
